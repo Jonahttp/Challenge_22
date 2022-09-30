@@ -1,3 +1,4 @@
+/* establishing border-boxes for elements */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,21 +9,18 @@ body {
     background-color: #d9dcd6;
 }
 
+/* modified to occupy screen horizontally */
 header {
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    position:fixed;
+    position: inherit;
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-header h1 .seo {
-    color: #d9dcd6;
 }
 
 header nav {
@@ -42,6 +40,7 @@ header nav ul li {
     margin-left: 25px;
 }
 
+/* all links recieve white font color */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -87,55 +86,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/*consolidated to become more semantic */
+aside div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/*consolidated to become more semantic */
+aside div h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/*consolidated to become more semantic */
+aside div img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*consolidated to become more semantic */
+main div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -144,79 +115,18 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/*consolidated to become more semantic */
+main div img {
+    max-height: 200px
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.contact-form {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/*consolidated to become more semantic */
+main div h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    text-align: center;
-    background-color: #2a607c;
-
-}
-
-.footer h2 {
-    font-size: 20px;
-}
-
-
+/* added contact form for fun */
 .label {
     display: block;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -243,5 +153,18 @@ p {
 
 .styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #2a607c;
+
+}
+
+.footer h2 {
+    font-size: 20px;
 }
